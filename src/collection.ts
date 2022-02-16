@@ -44,6 +44,9 @@ class Collection<K, V> implements LRUCacheInterface<K, V> {
     }
   }
 
+  /**
+   * This is just for show - pun intended
+   */
   show(): void {
     console.log({collection: this.collection });
   }
