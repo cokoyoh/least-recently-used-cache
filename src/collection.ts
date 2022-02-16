@@ -17,7 +17,7 @@ class Collection<K, V> implements LRUCacheInterface<K, V> {
     this.collection.set(key, value);
   }
 
-  get(key: K): V | number {
+  get(key: K): V | -1 {
     if (!this.collection.has(key)) {
       return -1;
     }
