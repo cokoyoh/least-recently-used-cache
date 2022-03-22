@@ -4,7 +4,7 @@ interface LRUCacheInterface<K, V> {
 }
 
 class Collection<K, V> implements LRUCacheInterface<K, V> {
-  private capacity: number;
+  private readonly capacity: number;
   private collection: Map<K, V>;
 
   constructor(capacity: number) {
